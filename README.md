@@ -17,7 +17,7 @@
 
 <h3 align="center">
     
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=Rishubot&repo=rishu_music&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Rishubot&repo=RishuManagement&theme=dark)
 
 
 
@@ -25,7 +25,7 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Rishuz/Lololol"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-00FFFF?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/RishuBot/RishuManagement"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-00FFFF?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
