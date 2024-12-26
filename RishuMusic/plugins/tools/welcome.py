@@ -78,7 +78,7 @@ def circle(pfp, size=(500, 500), brightness_factor=10):
     return pfp
 
 def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
-    background = Image.open("RishuMusic/assets/wel2.png")
+    background = Image.open("RishuMusic/assets/RISHUWLCM.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp, brightness_factor=brightness_factor) 
     pfp = pfp.resize((500, 500))
@@ -164,18 +164,18 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-**⎊─────☵ ᴡᴇʟᴄᴏᴍᴇ ☵─────⎊**
+**⎊────☵ ᴡᴇʟᴄᴏᴍᴇ ☵────⎊**
 
-**▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬**
+**▬▭▬▭▬▭▬▭▬▭▬▭▬▭**
 
 **☉ ɴᴀᴍᴇ ⧽** {user.mention}
 **☉ ɪᴅ ⧽** `{user.id}`
 **☉ ᴜ_ɴᴀᴍᴇ ⧽** @{user.username}
 **☉ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs ⧽** {count}
 
-**▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬**
+**▬▭▬▭▬▭▬▭▬▭▬▭▬▭**
 
-**⎉──────▢✭ 侖 ✭▢──────⎉**
+**⎉────▢✭ 侖 ✭▢────⎉**
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
