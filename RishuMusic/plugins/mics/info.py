@@ -55,7 +55,7 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "RishuMusic/assets/SACHININFO.PNG"
+bg_path = "RishuMusic/assets/RISHUINFO.PNG"
 font_path = "RishuMusic/assets/hiroko.ttf"
 
 #
@@ -64,7 +64,7 @@ font_path = "RishuMusic/assets/hiroko.ttf"
 
 INFO_TEXT = """
 ㅤ◦•●◉✿ ᴜsᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ  ✿◉●•◦
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
 ❍ ᴜsᴇʀ ɪᴅ ɴᴏ. ▷ `{}`
 ❍ ᴜsᴇʀɴᴇᴍᴇ ▷ @{} 
@@ -74,7 +74,7 @@ INFO_TEXT = """
 ❍ ʙɪᴏ ▷ {}
 
 ❖ ᴍᴀᴅᴇ ʙʏ  ➛ [Ꝛɪsʜυ ₰](https://t.me/ur_rishu_143)
-▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
+▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
 """
 
