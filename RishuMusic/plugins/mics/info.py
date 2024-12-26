@@ -55,7 +55,7 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "RishuMusic/assets/RISHUINFO.PNG"
+bg_path = "RishuMusic/assets/RISHUINFO.png"
 font_path = "RishuMusic/assets/hiroko.ttf"
 
 #
