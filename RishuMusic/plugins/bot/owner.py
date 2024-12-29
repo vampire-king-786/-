@@ -14,7 +14,7 @@ start_txt = """
 │├ ʀᴇᴀʟ ɴᴀᴍᴇ - ʀɪsʜᴜ ʀᴀᴊᴘᴜᴛ
 │├─────────────────╯
 ├┼─────────────────⦿
-├┤~ @Rishu1286
+├┤~ @RishuNetwork
 ├┤~ @Ur_rishu_143
 ├┤~ @Vip_robotz
 ├┼─────────────────⦿
@@ -32,11 +32,11 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗦𝗔𝗡𝗔𝗧𝗔𝗡𝗜 ", url=f"https://t.me/Rishu1286")
+          InlineKeyboardButton("Ｒ I Տ ᕼ ᑌ ", url=f"https://t.me/Rishu1286")
         ],
         [
           InlineKeyboardButton("ＨＥＬＰ", url="https://t.me/rishu1286"),
-          InlineKeyboardButton("ＲＥＰＯ", url="https://t.me/rishu1286"),
+          InlineKeyboardButton("ＲＥＰＯ", url="https://github.com/RishuBot/RishuManagement"),
           ],
                [
                 InlineKeyboardButton(" ＮＥＴＷＯＲＫ", url=f"https://t.me/ur_rishu_143"),
@@ -49,7 +49,7 @@ InlineKeyboardButton("ＯＦＦＩＣＩＡＬ ＢＯＴ", url=f"https://t.me/vi
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/94f5088fdc7a0450bfa0a.jpg",
+        photo="https://envs.sh/oKU.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
