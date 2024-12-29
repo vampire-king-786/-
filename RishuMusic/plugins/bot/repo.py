@@ -9,9 +9,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 start_txt = """
 ⌾ ᴡᴇʟᴄᴏᴍᴇ ғᴏʀ Ꝛɪsʜυ ʀᴇᴘᴏs ⌾
  
-◎ ʙʜᴀɢ ʙʜᴏsᴅɪᴋᴇ
- 
-◎ ʀᴇᴘᴏ ᴛᴏ ɴᴀ ᴅᴜɴɢᴀ
+● ɪғ ʏᴏᴜ ᴡᴀɴᴛ ˹ ʀɪsʜᴜ ꭙ ᴍᴜsɪᴄ ♡゙゙
+
+● ʙᴏᴛ ʀᴇᴘᴏ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʀᴇᴘᴏ ● 
 """
 
 
@@ -31,14 +31,14 @@ async def start(_, msg):
                 InlineKeyboardButton("• ɴᴇᴛᴡᴏʀᴋ •", url=f"https://t.me/ur_rishu_143"),
 ],
 [
-InlineKeyboardButton("• ᴏғғɪᴄɪᴀʟ ʙᴏᴛ •", url=f"https://t.me/vip_music_vc_bot"),
+InlineKeyboardButton("• ʀᴇᴘᴏ •", url=f"https://github.com/RishuBot/RishuManagement"),
 
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/256b87e379dfd405b957d.jpg",
+        photo="https://envs.sh/oK4.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
