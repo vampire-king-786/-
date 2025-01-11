@@ -11,11 +11,11 @@ def goodnight_command_handler(_, message):
     if send_sticker:
         sticker_id = get_random_sticker()
         app.send_sticker(message.chat.id, sticker_id)
-        message.reply_text(f"**❖ Ҩ፝֟ɴ P᷅᷄᷅ʀᴀᴛɪᷟʙᷝʜᷤᴀᷤ ♡゙ - ᴅʜᴀɴʏᴀᴡᴀᴅ 🐣 ❖**\n\n**❍  {sender} 🍷 **\n\n**❖ ᴘᴀʀᴛʏ ʜᴀɪ sʜʏᴀᴍ ᴋᴏ ᴊᴀʀᴜʀ ᴀᴀɴᴀ**")
+        message.reply_text(f"**❖ ᴅʜᴀɴʏᴀᴡᴀᴅ 🐣 ❖**\n\n**❍  {sender} 🍷 **\n\n**❖ ᴘᴀʀᴛʏ ʜᴀɪ sʜʏᴀᴍ ᴋᴏ ᴊᴀʀᴜʀ ᴀᴀɴᴀ**")
     else:
         emoji = get_random_emoji()
         app.send_message(message.chat.id, emoji)
-        message.reply_text(f"**❖ Ҩ፝֟ɴ P᷅᷄᷅ʀᴀᴛɪᷟʙᷝʜᷤᴀᷤ ♡゙ - ᴅʜᴀɴʏᴀᴡᴀᴅ 🐣 ❖**\n\n**❍  {sender} {emoji} **\n\n**❖ ᴘᴀʀᴛʏ ʜᴀɪ sʜʏᴀᴍ ᴋᴏ ᴊᴀʀᴜʀ ᴀᴀɴᴀ**")
+        message.reply_text(f"**❖ ᴅʜᴀɴʏᴀᴡᴀᴅ 🐣 ❖**\n\n**❍  {sender} {emoji} **\n\n**❖ ᴘᴀʀᴛʏ ʜᴀɪ sʜʏᴀᴍ ᴋᴏ ᴊᴀʀᴜʀ ᴀᴀɴᴀ**")
 
 
 def get_random_sticker():
