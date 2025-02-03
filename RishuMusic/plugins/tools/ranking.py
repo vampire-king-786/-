@@ -57,7 +57,22 @@ MISHI = [
 @app.on_message(filters.group & filters.group, group=6)
 def today_watcher(_, message):
     chat_id = message.chat.id
-    user_id = message.from_user.mention
+    user_id = message.from_user.id
+    if chat_id in today and user_id in today[chat_id]:
+        today[chat_id][user_id]["total_messages"] += 1
+    else:
+        if chat_id not in today:
+            today[chat_id] = {}
+        if user_id not in today[chat_id]:
+            today[chat_id][user_id] = {"total_messages": 1}
+        else:
+            today[chat_id][user_id]["total_messages"] = 1
+
+
+@app.on_message(filters.group & filters.group, group=6)
+def today_watcher(_, message):
+    chat_id = message.chat.id
+    user_id = message.from_user.id
     if chat_id in today and user_id in today[chat_id]:
         today[chat_id][user_id]["total_messages"] += 1
     else:
@@ -71,7 +86,7 @@ def today_watcher(_, message):
 
 @app.on_message(filters.group & filters.group, group=11)
 def _watcher(_, message):
-    user_id = message.from_user.mention    
+    user_id = message.from_user.id    
     user_data.setdefault(user_id, {}).setdefault("total_messages", 0)
     user_data[user_id]["total_messages"] += 1    
     collection.update_one({"_id": user_id}, {"$inc": {"total_messages": 1}}, upsert=True)
@@ -92,7 +107,7 @@ async def today_(_, message):
                 try:
                     user_name = (await app.get_users(user_id)).first_name
                 except:
-                    user_name = "Unknown"
+                    user_name = f"User {user_id}"
                 user_info = f"**{idx}**.   {user_name} ➠ {total_messages}\n"
                 response += user_info
             button = InlineKeyboardMarkup(
@@ -118,7 +133,7 @@ async def ranking(_, message):
         try:
             user_name = (await app.get_users(user_id)).first_name
         except:
-            user_name = "Unknown"
+            user_name = f"User {user_id}"
 
         user_info = f"**{idx}**.   {user_name} ➠ {total_messages}\n"
         response += user_info 
@@ -145,7 +160,7 @@ async def today_rank(_, query):
                 try:
                     user_name = (await app.get_users(user_id)).first_name
                 except:
-                    user_name = "Unknown"
+                    user_name = f"User {user_id}"
                 user_info = f"**{idx}**.   {user_name} ➠ {total_messages}\n"
                 response += user_info
             button = InlineKeyboardMarkup(
@@ -171,7 +186,7 @@ async def overall_rank(_, query):
         try:
             user_name = (await app.get_users(user_id)).first_name
         except:
-            user_name = "Unknown"
+            user_name = f"User {user_id}"
 
         user_info = f"**{idx}**.   {user_name} ➠ {total_messages}\n"
         response += user_info 
